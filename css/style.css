@@ -1,0 +1,157 @@
+#title-name {
+  font-family: "PT Serif", serif;
+  color: #6962ad;
+}
+.Tittel-background {
+  background-color: #f1eaff;
+  color: #6962ad;
+}
+.custom-bg {
+  background-color: #e5d4ff;
+}
+.navbar .nav-link.active {
+  background-color: #d0a2f7 !important; /* Change the background color */
+  color: black;
+}
+.navbar .nav-link {
+  color: #000000 !important; /* Black for non-active links */
+}
+
+.navbar .nav-link:hover {
+  color: #333333 !important; /* Dark gray on hover */
+}
+
+/* Navigasjons styling hvor å animere hamburger menyen. */
+.navbar-toggler-icon {
+  background-image: none !important;
+  background-color: var(--bs-gray-800);
+  height: 3px;
+  width: 25px;
+  margin: 10px 0;
+  position: relative;
+  transition: all 0.35s ease-out;
+  transform-origin: center;
+}
+
+.navbar-toggler-icon::before {
+  display: block;
+  background-color: var(--bs-gray-800);
+  height: 3px;
+  content: "";
+  position: relative;
+  top: -7px;
+  transition: all 0.15s ease-out; /*tatt ned så den gjemmer seg fortere*/
+  transform-origin: center;
+}
+
+.navbar-toggler-icon::after {
+  display: block;
+  background-color: var(--bs-gray-800);
+  height: 3px;
+  content: "";
+  position: relative;
+  top: 4px;
+  transition: all 0.35s ease-out;
+  transform-origin: center;
+}
+
+.navbar-dark .navbar-toggler-icon,
+.navbar-dark .navbar-toggler-icon::before,
+.navbar-dark .navbar-toggler-icon::after {
+  background-color: var(--bs-gray-100);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  transform: rotate(-90deg) translateX(7px);
+}
+
+.navbar-toggler {
+  outline: none !important; /* Removes the outline */
+  border: none; /* Removes any border that might be visible */
+  box-shadow: none !important; /* Removes the box shadow if present */
+}
+/* enden av navigasjons delen */
+
+/* General Styling for the Resume Section */
+.resume-styling h2 {
+  font-family: "EB Garamond", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px; /* Space below the heading */
+  font-weight: bolder;
+}
+
+/* Bold for universities, schools, and work experiences */
+.resume-styling .resume-sted {
+  font-weight: bold;
+  font-size: 1rem; /* Adjust based on preference */
+}
+
+/* Softer and smaller for study parts and positions */
+.resume-styling .resume-stilling,
+.resume-styling .resume-studie {
+  color: #777; /* Softer gray color */
+  font-size: 0.9rem; /* Slightly smaller than the default */
+}
+
+/* Year styling */
+.resume-styling .resume-year {
+  color: #6c22a6; /* Specified purple color */
+  font-weight: normal; /* Less strong font */
+  float: right; /* Position to the right */
+  font-size: 0.9rem; /* Matching the study and position size */
+}
+
+/* Clear float for proper alignment */
+.resume-styling ul li {
+  list-style-type: none; /* Remove bullet points */
+  padding-bottom: 10px; /* Space between items */
+  overflow: hidden; /* Clear floated content */
+}
+.ferdigheter-programmering {
+  color: #777;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+.om-meg {
+  color: #40514e;
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  background-color: #f1eaff;
+}
+
+hr {
+  border: dotted #6c22a6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+.kontakt-meg-ul {
+  list-style-type: none;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  color: #6962ad;
+}
+.btn-custom {
+  background-color: #d0a2f7;
+  border: none;
+  color: black;
+}
+
+/* contact me button*/
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center; /* Centers the button vertically if the container has a specified height */
+  height: 10vh; /* Example height - adjust or remove as needed */
+}
+.btn-custom:hover {
+  background-color: #e8c2ff; /* New color on hover */
+}

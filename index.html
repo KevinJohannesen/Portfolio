@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Johannesen</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navigasjon-->
+    <nav class="navbar navbar-expand-lg custom-bg">
+      <div class="container-fluid justify-content-center">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./assets/images/KJ-logo-bakgrunn.png"
+            alt="Logo"
+            height="70"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <!--knapp slik at når nav kollapser så dukker det opp en navigasjons meny knapp-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <header class="d-flex py-3">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!--når skjermen er mindre så kollapser navigasjonen-->
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a
+                  href="./index.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  >Hjem</a
+                >
+              </li>
+              <a class="navbar-text-color">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Ferdigheter</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Prosjekter</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Kontakt meg</a>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </header>
+      </div>
+    </nav>
+
+    <!--Tittel-->
+    <section id="title" class="Tittel-background">
+      <div class="px-4 py-5 text-center">
+        <img
+          class="d-block mx-auto mb-4"
+          src="./assets/images/laptop.svg"
+          alt="Laptop icon"
+          width="72"
+          height="57"
+        />
+        <h1 class="display-4 fw-bold text-body-emphasis" id="title-name">
+          Kevin Johannesen
+        </h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">En Dataingeniør student</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--sammendrag av utdanning og jobb erfaring ( altså resume )  -->
+    <section class="container my-5 resume-styling">
+      <div class="row">
+        <!--utdanninger-->
+        <div class="col-md-6">
+          <h2>Utdanning</h2>
+          <ul>
+            <li>
+              <div class="resume-sted">OsloMet-storbyuniversitet</div>
+              <div class="resume-studie">Dataingeniør</div>
+              <div class="resume-year">(2023 - 2026)</div>
+            </li>
+            <li>
+              <div class="resume-sted">
+                Norges teknisk-naturvitenskapelige universitet
+              </div>
+              <div class="resume-studie">
+                Årsstudium, Forkurs for ingeniør- og sivilingeniørutdanning
+              </div>
+              <div class="resume-year">(2022 - 2023)</div>
+            </li>
+            <li>
+              <div class="resume-sted">Skedsmo videregående skole</div>
+              <div class="resume-studie">Elektro & datateknologi</div>
+              <div class="resume-year">(2020 - 2022)</div>
+            </li>
+            <!-- utdanningsliste-->
+          </ul>
+        </div>
+
+        <!--jobberfaringer-->
+        <div class="col-md-6">
+          <h2>Erfaring</h2>
+          <ul>
+            <li>
+              <div class="resume-sted">Oslo By Steinerskole</div>
+              <div class="resume-stilling">IT-Ansvarlig</div>
+              <div class="resume-year">(2023 - 2024)</div>
+            </li>
+            <li>
+              <div class="resume-sted">Bademiljø Lørenskog</div>
+              <div class="resume-stilling">SEO og markedsføring</div>
+              <div class="resume-year">(2021 - 2023)</div>
+            </li>
+            <li>
+              <div class="resume-sted">3Elektro AS</div>
+              <div class="resume-stilling">Hjelpemontør elektriker</div>
+              <div class="resume-year">(2022 - 2022)</div>
+            </li>
+            <li>
+              <div class="resume-sted">Elkomfort AS</div>
+              <div class="resume-stilling">Hjelpemontør elektriker</div>
+              <div class="resume-year">(2019 - 2021)</div>
+            </li>
+
+            <!-- Jobb erfaring-->
+          </ul>
+        </div>
+      </div>
+
+      <div class="ferdigheter">
+        <h2>Ferdigheter</h2>
+        <div class="ferdigheter-programmering">
+          Programmering språk & Verktøy
+        </div>
+        <a class="programmering-icon">
+          <img
+            src="./assets/images/html-icon.png"
+            height="50"
+            alt="html-icon" />
+          <img src="./assets/images/css-icon.png" height="50" alt="css-icon"
+        /></a>
+        <img
+          src="./assets/images/java-script.png"
+          height="50"
+          alt="java-script icon"
+        />
+        <img src="./assets/images/java-icon.png" height="50" alt="java icon" />
+        <img
+          src="./assets/images/bootstrap-icon-svart-hvit.png"
+          height="70"
+          alt="bootstrap-icon"
+        />
+      </div>
+    </section>
+
+    <hr />
+
+    <!--om meg-->
+
+    <section class="om-meg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <h2 id="hei">Hei</h2>
+            <img
+              src="./assets/images/kevin-selfie.png"
+              class="img-fluid rounded-circle"
+              style="height: 220px; width: 200px; object-fit: cover"
+            />
+          </div>
+          <p>
+            Jeg studerer dataingeniørfag ved OsloMet og har en stor interesse
+            for webutvikling, som opptar mye av fritiden min. Ved siden av
+            studiene finner jeg glede i trening og turer i marka, samt reiser
+            som utvider horisonten min og gir inspirasjon.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+    <!--kontakt meg !-->
+
+    <section>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <ul class="kontakt-meg-ul">
+              <li><h2>Kontakt meg</h2></li>
+              <li>
+                  <p>
+                    Glad i koding eller spørsmål om koding? la oss ta en prat om
+                    det da vel!
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="button-container">
+            <a href="mailto:kevinjohannesen1@gmail.com" class="btn btn-custom">Kontakt meg</a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Hjem</a></li>
+          <li class="nav-item"><a href="https://www.linkedin.com/in/kevin-johannesen/" class="nav-link px-2 text-body-secondary">LinkedIn</a></li>
+          <li class="nav-item"><a href="mailto:kevinjohannesen1@gmail.com" class="nav-link px-2 text-body-secondary">Email</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 Kevin Johannesen</p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
